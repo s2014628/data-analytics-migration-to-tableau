@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='flights (flights_analytics_database)' inline='true' name='federated.0btdn5r1wei6bd1ckb5l11k8s60v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='skyscanner.cmgxwtwmbmku.eu-west-2.rds.amazonaws.com' name='postgres.1cvj3e00l0w1sr1gq26qi08daa04'>
+            <connection authentication='username-password' class='postgres' dbname='flights_analytics_database' one-time-sql='' port='5432' server='skyscanner.cmgxwtwmbmku.eu-west-2.rds.amazonaws.com' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.1cvj3e00l0w1sr1gq26qi08daa04' name='flights' table='[public].[flights]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.1cvj3e00l0w1sr1gq26qi08daa04' name='flights' table='[public].[flights]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dayofmonth</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dayofmonth]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dayofmonth</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dayofweek</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dayofweek]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dayofweek</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deptime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[deptime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>deptime</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crsdeptime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[crsdeptime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crsdeptime</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>arrtime</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crsarrtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[crsarrtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crsarrtime</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uniquecarrier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uniquecarrier]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>uniquecarrier</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flightnum</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[flightnum]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>flightnum</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actualelapsedtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[actualelapsedtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>actualelapsedtime</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crselapsedtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[crselapsedtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crselapsedtime</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrdelay</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrdelay]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>arrdelay</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depdelay</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[depdelay]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>depdelay</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orgin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[orgin]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>orgin</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dest</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dest]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dest</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cancelled</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[cancelled]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>cancelled</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diverted</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[diverted]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>diverted</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_5BE6383B96C94193A885EE8C566B8A1D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Dest (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[dest]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;ORD&quot;'>
+            <value>&quot;ORD&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='flights' datatype='table' name='[__tableau_internal_object_id__].[flights_5BE6383B96C94193A885EE8C566B8A1D]' role='measure' type='quantitative' />
+      <column caption='Cancelled' datatype='integer' name='[cancelled]' role='measure' type='quantitative' />
+      <column caption='Crsarrtime' datatype='integer' datatype-customized='true' name='[crsarrtime]' role='dimension' type='quantitative' />
+      <column caption='Crsdeptime' datatype='integer' name='[crsdeptime]' role='measure' type='quantitative' />
+      <column caption='Dayofmonth' datatype='integer' name='[dayofmonth]' role='measure' type='quantitative' />
+      <column caption='Dayofweek' datatype='integer' name='[dayofweek]' role='measure' type='quantitative' />
+      <column caption='Dest' datatype='string' name='[dest]' role='dimension' type='nominal' />
+      <column caption='Diverted' datatype='integer' name='[diverted]' role='measure' type='quantitative' />
+      <column caption='Flightnum' datatype='string' datatype-customized='true' default-role='measure' default-type='quantitative' name='[flightnum]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Uniquecarrier' datatype='string' name='[uniquecarrier]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='2' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Dest (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;ORD&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='flights' id='flights_5BE6383B96C94193A885EE8C566B8A1D'>
+            <properties context=''>
+              <relation connection='postgres.1cvj3e00l0w1sr1gq26qi08daa04' name='flights' table='[public].[flights]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Times New Roman'>Thr average distance travelled by different flight carrier</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flights (flights_analytics_database)' name='federated.0btdn5r1wei6bd1ckb5l11k8s60v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0btdn5r1wei6bd1ckb5l11k8s60v'>
+            <column-instance column='[flightnum]' derivation='Count' name='[cnt:flightnum:qk]' pivot='key' type='quantitative' />
+            <column caption='Flightnum' datatype='string' datatype-customized='true' default-role='measure' default-type='quantitative' name='[flightnum]' role='dimension' type='nominal' />
+            <column-instance column='[flightnum]' derivation='None' name='[none:flightnum:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[cnt:flightnum:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>47081</max>
+          </filter>
+          <slices>
+            <column>[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[cnt:flightnum:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+                <format attr='has-stroke' value='false' />
+                <format attr='size' value='1.4172928333282471' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[none:flightnum:nk]</cols>
+      </table>
+      <simple-id uuid='{FCB5C436-E605-4F24-A311-3C6CD32C7C7C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flights (flights_analytics_database)' name='federated.0btdn5r1wei6bd1ckb5l11k8s60v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0btdn5r1wei6bd1ckb5l11k8s60v'>
+            <column-instance column='[dest]' derivation='Count' name='[cnt:dest:qk]' pivot='key' type='quantitative' />
+            <column caption='Dest' datatype='string' name='[dest]' role='dimension' type='nominal' />
+            <column-instance column='[dest]' derivation='None' name='[none:dest:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[cnt:dest:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>296247</max>
+          </filter>
+          <filter class='categorical' column='[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[none:year:ok]'>
+            <groupfilter function='empty-level' member='[none:year:ok]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[none:dest:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[cnt:dest:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[cnt:dest:qk]</column>
+            <column>[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[none:year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[cnt:dest:qk]</rows>
+        <cols>[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[none:dest:nk]</cols>
+      </table>
+      <simple-id uuid='{9DB6219C-8251-42DA-96A4-732A5547EC15}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1DE29C49-A1E1-45AD-9BFE-CFE3448B58E1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[none:year:ok]' type='filter' />
+            <card param='[federated.0btdn5r1wei6bd1ckb5l11k8s60v].[cnt:dest:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B0E2652F-1F87-43BA-8151-7C513F48DA99}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{194C6A32-99A4-4A28-BEA9-08192C5A6792}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E7BF8705-7458-4A5A-A53C-590A283F5050}' />
+    </window>
+  </windows>
+</workbook>
